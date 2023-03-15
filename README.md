@@ -13,14 +13,14 @@
 
 This repository contains code and data for determining the parameters of success on Initial Coin Offerings (ICOs) through descriptive and predictive analysis. The project is divided into four parts as described below:
 
-Part I
+<h2>Part I </h2>
 In this part, we analyze the data on ICOs and visualize the connections between different variables to determine their effect on the success and performance of the ICOs. We observe that the success of an ICO largely depends on the amount raised during the offering and the soft cap of the ICO. We also find that the amount raised increases with ratings provided by experts and the number of team members, but decreases with an increase in the number of experts providing the ratings.
 
 We treat the missing values in the data set by putting in the average values from the data set for numeric missing values including duration, number of team members, number of experts, etc. We replace the missing values in softcap and hardcap with zeros assuming that the ICO is not launched if the minimum amount is not met. We create a new country category as "None" to treat the missing values in restricted countries, and drop the rows with missing values in the token field.
 
 We split the data into a 70:30 train/test ratio for regression purposes with the independent variables as those factors which visually appear to have a substantial effect on the amount raised, namely 'Token', 'Softcap', 'Hardcap', 'Start', 'End', 'Quarterstart', 'Duration', 'Country', 'ERC20', 'Rating', and '#Experts. The dependent variable is the amount raised. Dummy variables are created for categorical variables.
 
-Part II
+<h2>Part II </h2>
 In this part, we create a new variable called "Success" that gives a binary value of 1 if the ICO ascends to the soft cap or if it fails to do so but the amount raised is greater than 0.5 million dollars. Otherwise, the ICO is deemed unsuccessful. We use the IF function to test the values and generate a new column of success for each ICO.
 
 We conduct a graphical analysis of the variables to determine which variables are the most important in deciding the success of the ICO. We find that amount raised and softcap are the most important ones because the success criterion is derived from the two variables. Other variables that appear to increase the success of the ICO are accepted fiat, presales, number of experts, number of team members, ratings, number of bonuses, and the existence of US restrictions.
