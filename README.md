@@ -1,4 +1,4 @@
-## <h1 align="center"> Determining-ICO-Success-Parameters </h1>
+## <h1 align="center"> Determining ICO Success Parameters </h1>
 
 <head>
 
